@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Beginner Exercise by Abed Al Qader Madi </title>  
+    <body>
+        <ul>
+            <li>hello</li>
+            <li>this</li>
+            <li>is</li>
+            <li>a test</li>
+        </ul>
+        <hr>
+        <ol>
+            <li>my</li>
+            <li>name</li>
+            <li>is</li>
+            <li>Madii</li>
+        </ol>
+        <hr>
+        <address>
+        and my E-mail is: <a href="mailto:abed.madi@outlook.com">abed.madi@outlook.com</a>.</address>
+        <hr>
+        these are my university link 
+        <ol>
+            <li><a href="https://www.htu.edu.jo/?gclid=CjwKCAjwz5iMBhAEEiwAMEAwGOhS8vRDhojFUrKhqDT9qoFqd47lY2hla4UZqM5RT8WcHDNv2D6GFxoCUmsQAvD_BwE&gclid=CjwKCAjwz5iMBhAEEiwAMEAwGOhS8vRDhojFUrKhqDT9qoFqd47lY2hla4UZqM5RT8WcHDNv2D6GFxoCUmsQAvD_BwE">here you can vist and learn more about HTU  </a></li>
+            <li><a href="https://sis.htu.edu.jo/Default.aspx?url=MainDefault.aspx">here you can vist our portal </a></li>
+            <li><a href="https://elearning.htu.edu.jo/login/index.php">here is the Elearning website</a></li>
+        </ol>
+    </body>
+</head>
+</html>
