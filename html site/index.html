@@ -78,8 +78,27 @@
 
                </ul>
            </section>
+           <h2>Document outlines </h2>
+           <p>
+            One of the fundamental concepts of HTML is that its documents can be represented by a document outline that summarizes the content of the page. Imagine a page being represented by a table of contents and you'll have a good idea of what one of these outlines might look like. These outlines assist in tasks such as quickly searching documents and making content easier to navigate for assistive devices.  
+           </p>
+           <p>
+            Prior to HTML5, document outlines were generated entirely through the use of headings. An H1 at the top of the page would serve to identify the page content, and subsequent headings would create sections and subsections inside of it. This meant that having a strategy for when to use certain headings was critical for maintaining consistent document structure. In HTML5 a new outline algorithm was introduced that added the new sectioning elements to the heading elements and created a more sophisticated outlining model. Although not currently implemented by user agents it is still recommended that authors familiarize themselves with it so that they're using the new sectioning and semantic tags properly.
+           </p>
+           <p>
+            It is still considered to be a best practice to use heading tags to establish the document outline. Mozilla has a fantastic article on sections and outlines in HTML documents that I strongly recommend reading. 
+           </p>
            <section>
-
+               <h2>W3C Warning </h2>
+               <p>At the time of the authoring of this course, the W3C had posted this warning regarding the HTML5 outline algorithm:
+                </p>
+                <p> 
+                    There are currently no known implementations of the outline algorithm in graphical browsers or assistive technology user agents, although the algorithm is implemented in other software such as conformance checkers. Therefore the outline algorithm cannot be relied upon to convey document structure to users. Authors are advised to use heading rank (h1-h6) to convey document structure. 
+                </p>
+                
+           </section>
+           <section>
+               <h2>WAI-ARIA Roles</h2>
            </section>
        </main>
         </header>
