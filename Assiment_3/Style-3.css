@@ -1,0 +1,37 @@
+ h1{
+     border: 20px solid lightslategray;
+background-color:  lightslategrey;
+
+}
+
+.wrapperclearfix{
+    height: 200px ;
+    
+}
+.wrapperclearfix nav{
+    background-color:lightgrey;
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+}
+.wrapperclearfix nav a{
+    color: black;
+}
+.wrapperclearfix ul{
+    list-style-type: none;
+}
+.wrapperclearfix section{
+    text-indent: 20px;
+    background-color:white;
+    display: inline-block;
+    float: right;
+    width: 600px;
+}
+.wrapperclearfix section h2{
+    font-family: Arial, sans-serif;
+} 
+footer p{
+    border: solid 20px lightslategrey;; 
+    background-color: lightslategrey;
+    text-align: center;
+}
