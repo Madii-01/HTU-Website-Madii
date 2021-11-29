@@ -31,6 +31,26 @@ body{
 }
 
 
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+
+.check-out-btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
 
 .header{
     background: var(--bg);
@@ -105,6 +125,10 @@ body{
 .header .search-form label:hover{
     color:var(--main-color);
 }
+
+
+
+
 #menu-btn{
     display: none;
 } 
@@ -118,15 +142,7 @@ body{
     background-position: center;
 
 }
-.btn{
-    margin-top: 1rem;
-    display: inline-block;
-    padding:.9rem 3rem;
-    font-size: 1.7rem;
-    color:#fff;
-    background: var(--main-color);
-    cursor: pointer;
-}
+
 .home-page .content{
     max-width: 60rem;
 
