@@ -40,6 +40,15 @@ body{
     background: var(--main-color);
     cursor: pointer;
 }
+.add-btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
 
 
 .check-out-btn{
@@ -151,6 +160,29 @@ body{
     font-size: 6rem;
     color: #fff;
 }
+
+.menu-section .box-contanier{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu-section .box-contanier .box{
+    padding: 5rem;
+    text-align: center;
+    border: var(--border)
+}
+
+.menu-section .box-contanier .box img{
+    height: 10rem;
+}
+
+.menu-section .box-contanier .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
 
 
 
