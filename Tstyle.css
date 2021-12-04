@@ -1,0 +1,21 @@
+:root{
+    --main-color: #d3ad7f;
+    --black:#13131a; 
+    --border:.1rem solid #d3ad7f ;
+}
+body{
+    color: var(--black);
+}
+
+
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1;
+}
