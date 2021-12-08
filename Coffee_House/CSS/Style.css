@@ -93,6 +93,17 @@ body{
     font-size: 2.5rem;
     margin-left: 2rem;
 }
+.header .icons .cart a{
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    
+}
+.header .icons .cart a:hover{
+    color: var(--main-color);
+}
 
 .header .icons div:hover{
     color:var(--main-color);
@@ -211,6 +222,9 @@ body{
   .menu-section .box-contanier .box:hover h3{
 color:var(--black);
 }
+
+
+
 
 
 
