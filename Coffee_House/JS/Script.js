@@ -61,7 +61,7 @@ for(let i=0; i<carts.length; i++){
     })
 }
 
-function onCart(){
+function onCartItems(){
     let productNumbers = localStorage.getItem('cartNumbers');
 
     if(productNumbers) {
@@ -83,4 +83,4 @@ function cartNumbers() {
         document.querySelector('.cart span').textContent = 1;
     }   
 }
-onCart();
+onCartItems();
