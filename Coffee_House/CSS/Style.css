@@ -161,10 +161,15 @@ body{
     color: #fff;
 }
 
+
 .menu-section .box-contanier{
-    display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(30rem, 1fr));
-    gap: 1.5rem;
+    display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: auto auto ; 
+  grid-template-areas: 
+    "div1 div2 div3"
+    "div4 div5 div6"; 
 }
 
 .menu-section .box-contanier .box{
@@ -182,7 +187,30 @@ body{
     font-size: 2rem;
     padding: 1rem 0;
 }
+.div1 {
+    display: grid flex; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . ."
+      ". . ."
+      ". . ."; 
+    grid-area: div1; 
+  }
+  .div2 { grid-area: div2; }
+  .div3 { grid-area: div3; }
+  .div4 { grid-area: div4; }
+  .div5 { grid-area: div5; }
+  .div6 { grid-area: div6; 
+  }
+  .menu-section .box-contanier .box:hover{
+      background: white;
+  }
 
+  .menu-section .box-contanier .box:hover h3{
+color:var(--black);
+}
 
 
 
