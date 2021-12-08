@@ -20,48 +20,50 @@ let menuItems = [
     {
         name: "AMERICAN COFFEE",
         tag: "AMERICAN-COFFEE",
-        price: 2,
-        incart: 0 
+        price: 2.10,
+        inCart: 0 
     },
     {
         name: "CARAMEL MACCHIATO",
         tag: "CARAMEL-MACCHIATO",
-        price: 3,
-        incart: 0 
+        price: 3.99,
+        inCart: 0 
     },
     {
         name: "ICED SPANISH LATTE",
         tag: "ICED-SPANISH-LATTE",
-        price: 3,
-        incart: 0 
+        price: 3.99,
+        inCart: 0 
     },
     {
         name: "SPANISH LATTE",
         tag: "SPANISH-LATTE",
-        price: 3,
-        incart: 0 
+        price: 3.70,
+        inCart: 0 
     },
     {
         name: "TURKISH COFFEE",
         tag: "TURKISH-COFFEE",
-        price: 3,
-        incart: 0 
+        price: 3.89,
+        inCart: 0 
     },
     {
         name: "WHITE MOCHA",
         tag: "WHITE-MOCHA",
-        price: 3,
-        incart: 0 
+        price: 3.99,
+        inCart: 0 
     }
 ];
 
 for(let i=0; i<carts.length; i++){
     carts[i].addEventListener('click' , () => {
-        cartNumbers();
+        cartNumbers(menuItems[i]);
+        totalCost(menuItems[i]);
     })
 }
 
 function onCartItems(){
+    
     let productNumbers = localStorage.getItem('cartNumbers');
 
     if(productNumbers) {
@@ -69,7 +71,8 @@ function onCartItems(){
     }
 }
 
-function cartNumbers() {
+function cartNumbers(menuItems) {
+   
     let productNumbers = localStorage.getItem('cartNumbers');
     
     productNumbers =  parseInt(productNumbers);
@@ -82,5 +85,48 @@ function cartNumbers() {
         localStorage.setItem('cartNumbers' , 1); 
         document.querySelector('.cart span').textContent = 1;
     }   
+    setItems(menuItems);
 }
+function setItems(menuItems) {
+    let cartItems = localStorage.getItem('menuItemsInCart');
+    cartItems =JSON.parse(cartItems) 
+    
+    if(cartItems != null) {
+        if(cartItems[menuItems.tag]== undefined){
+            cartItems = {
+                ...cartItems,
+                [menuItems.tag]: menuItems
+            }
+
+        }
+     
+        cartItems[menuItems.tag].inCart += 1;
+    }
+    else{
+        menuItems.inCart = 1;
+        cartItems = {
+         [menuItems.tag]: menuItems
+    }
+    }
+    
+    
+    localStorage.setItem("menuItemsInCart" , JSON.stringify(cartItems));
+}
+
+function totalCost(menuItems){
+
+let cartCost = localStorage.getItem('totalCost');
+
+console.log("the price is" ,cartCost);
+console.log(typeof cartCost);
+
+if(cartCost != null){
+    cartCost = parseFloat(cartCost);
+    localStorage.setItem("totalCost" , cartCost + menuItems.price );
+}
+else{
+localStorage.setItem("totalCost" , menuItems.price);
+    }
+}
+
 onCartItems();
