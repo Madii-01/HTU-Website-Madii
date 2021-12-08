@@ -16,6 +16,44 @@ document.querySelector('#search-btn').onclick = () =>{
 
 let carts = document.querySelectorAll('.add-btn');
 
+let menuItems = [
+    {
+        name: "AMERICAN COFFEE",
+        tag: "AMERICAN-COFFEE",
+        price: 2,
+        incart: 0 
+    },
+    {
+        name: "CARAMEL MACCHIATO",
+        tag: "CARAMEL-MACCHIATO",
+        price: 3,
+        incart: 0 
+    },
+    {
+        name: "ICED SPANISH LATTE",
+        tag: "ICED-SPANISH-LATTE",
+        price: 3,
+        incart: 0 
+    },
+    {
+        name: "SPANISH LATTE",
+        tag: "SPANISH-LATTE",
+        price: 3,
+        incart: 0 
+    },
+    {
+        name: "TURKISH COFFEE",
+        tag: "TURKISH-COFFEE",
+        price: 3,
+        incart: 0 
+    },
+    {
+        name: "WHITE MOCHA",
+        tag: "WHITE-MOCHA",
+        price: 3,
+        incart: 0 
+    }
+];
 
 for(let i=0; i<carts.length; i++){
     carts[i].addEventListener('click' , () => {
@@ -23,62 +61,26 @@ for(let i=0; i<carts.length; i++){
     })
 }
 
-let menuItems = [
-    {
-        name: 'AMERICAN COFFEE',
-        tag: 'AMERICAN COFFEE',
-        price: 2.99,
-        incart: 0 
-    },
-    {
-        name: 'CARAMEL MACCHIATO',
-        tag: 'CARAMEL MACCHIATO',
-        price: 3.99,
-        incart: 0 
-    },
-    {
-        name: 'ICED SPANISH LATTE',
-        tag: 'ICED SPANISH LATTE',
-        price: 3.99,
-        incart: 0 
-    },
-    {
-        name: 'SPANISH LATTE',
-        tag: 'SPANISH LATTE',
-        price: 3.99,
-        incart: 0 
-    },
-    {
-        name: 'TURKISH COFFEE',
-        tag: 'TURKISH COFFEE',
-        price: 3.99,
-        incart: 0 
-    },
-    {
-        name: 'WHITE MOCHA',
-        tag: 'WHITE MOCHA',
-        price: 3.99,
-        incart: 0 
-    },
-]
-    
+function onCart(){
+    let productNumbers = localStorage.getItem('cartNumbers');
 
-
+    if(productNumbers) {
+        document.querySelector('.cart span').textContent = productNumbers;
+    }
+}
 
 function cartNumbers() {
-    let menuPorducts = localStorage.getItem('cartNumbers');
+    let productNumbers = localStorage.getItem('cartNumbers');
     
-    menuPorducts =  parseFloat(menuPorducts);
+    productNumbers =  parseInt(productNumbers);
 
-    if(menuPorducts){
-        localStorage.setItem('cartNumbers' , menuPorducts + 1);
-        
+    if( productNumbers ){
+        localStorage.setItem('cartNumbers' , productNumbers + 1);
+        document.querySelector('.cart span').textContent = productNumbers + 1;
     }
     else{
-        localStorage.setItem('cartNumbers', 1);
-     
-
-    }
-    
-
+        localStorage.setItem('cartNumbers' , 1); 
+        document.querySelector('.cart span').textContent = 1;
+    }   
 }
+onCart();
