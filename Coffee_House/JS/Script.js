@@ -19,7 +19,7 @@ let carts = document.querySelectorAll('.add-btn');
 let menuItems = [
     {
         name: "AMERICAN COFFEE",
-        tag: "AMERICAN-COFFEE",
+        tag: "AMERICAN COFFEE",
         price: 2.10,
         inCart: 0 
     },
@@ -129,4 +129,37 @@ localStorage.setItem("totalCost" , menuItems.price);
     }
 }
 
+function displayCart(){
+    let cartItems = localStorage.getItem("menuItemsInCart");
+    cartItems = JSON.parse(cartItems);
+    let producContainer = document.querySelector(".products");
+
+    console.log(cartItems)
+    if(cartItems && producContainer){
+      producContainer.innerHTML = '';
+        Object.values(cartItems).map(item => { 
+            producContainer.innerHTML += `
+            <div class="prdoduct">
+               <ion-icon name="close-circle-outline"></ion-icon>
+               <img src="./images/${item.tag}.jpg" width = 100px; height="100px";>
+               <span>${item.name} </span>
+            </div>
+               <div class = "price"></div>
+                ${item.price}
+                
+                <div calss = "quantity">
+                    <ion-icon class = "decrease " 
+                    name="chevron-back-outline"></ion-icon>
+                    <span>${item.inCart}</span>
+                    <ion-icon class="increase" name="chevron-forward-outline"></ion-icon>
+                </div>
+               `
+        });
+
+
+    }
+}
+
 onCartItems();
+displayCart();
+

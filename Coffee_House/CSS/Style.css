@@ -2,8 +2,8 @@
 
 :root{
     --main-color:#d3ad7f;
-    --black:#13131a;
-    --bg:#010103;
+    --black:black;
+    ;
     --border:.1rem solid #d3ad7f;
 }
 
@@ -27,7 +27,7 @@ html{
 
 
 body{
-    background: var(--bg);
+    background:var(--black)
 }
 
 
@@ -68,9 +68,9 @@ body{
     justify-content: space-between;
     padding:1.5rem 7%;
     border-bottom: var(--border);
-    position: fixed;
+    position: relative;
     top:0; left: 0; right: 0;
-    z-index: 1;
+    z-index: 1000
 }
 
 
@@ -98,7 +98,7 @@ body{
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;
-    padding: 5px;
+    padding: 2rem;
     
     
 }
@@ -109,6 +109,7 @@ body{
 .header .icons div:hover{
     color:var(--main-color);
 }
+
 
 
 .header .search-form{
@@ -150,6 +151,7 @@ body{
 
 
 
+
 #menu-btn{
     display: none;
 } 
@@ -172,6 +174,8 @@ body{
     font-size: 6rem;
     color: #fff;
 }
+
+
 
 
 .menu-section .box-contanier{
@@ -226,11 +230,80 @@ color:var(--black);
 
 
 
+/*--------- cart web---------*/
+
+h5{
+    color: #fff;
+}
+.products-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+.products-container ion-icon{
+    font-size: 25px;
+    color:#fff;
+    margin-left:  10px;;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.products-container ion-icon:hover{
+    color:var(--main-color);
+}
+
+ .product-header{
+     width: 100%;
+     max-width: 650px;
+     display: flex;
+     justify-content: flex-start;
+     border-bottom: 4px solid var(--main-color);
+     margin: 0 auto;
+ }
+ .title{
+     width: 45%;
+    
+ }
+
+ .price{
+     width: 15%;
+     
+     display: flex;
+     align-items: center;
+    
+ }
+ .quantity{
+     width: 30%;
+     border-bottom: 1px solid var(--main-color) ;
+     display: flex;
+     align-items: center;
+ }
+.total{
+    width: 10%;
+    border-bottom: 1px solid var(--main-color);
+    display: flex;
+    align-items: center;
+} 
+
+.product{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--main-color);
+ }
+ 
+.spancolor{
+    color: #fff;
+}
 
 
-
-
-
+/*--------- cart web---------*/
 
 
 
