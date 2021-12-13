@@ -6,6 +6,7 @@ document.querySelector('#menu-btn').onclick = () =>{
     cartItem.classList.remove('active');
 }
 
+
 let searchForm = document.querySelector('.search-form');
 
 document.querySelector('#search-btn').onclick = () =>{
@@ -49,7 +50,7 @@ let menuItems = [
     },
     {
         name: "WHITE MOCHA",
-        tag: "WHITE-MOCHA",
+        tag: "WHITE-MOCHA-3",
         price: 3.99,
         inCart: 0 
     }
