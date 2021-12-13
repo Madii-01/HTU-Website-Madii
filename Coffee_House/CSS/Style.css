@@ -383,6 +383,9 @@ h5{
     .header{
         padding: 1.5rem 2rem;
     }
+    .cart-header{
+        padding: 1.5rem 2rem;
+    }
     #menu-btn{
         display: inline-block;
     }
@@ -394,11 +397,19 @@ h5{
         width: 30rem;
         height: 775px;
     }
-
+.cart-header .cart-navbar{
+    position: absolute;
+        top:100%; right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: 775px;
+}
     .header .navbar.active{
         right:0;
     }
-
+    .cart-header .cart-navbar.active{
+        right: 0;
+    }
     .header .navbar a{
         color:var(--black);
         display: block;
@@ -406,5 +417,11 @@ h5{
         padding:.5rem;
         font-size: 2rem;
     }
-   
+   .cart-header .cart-navbar{
+    color:var(--black);
+    display: block;
+    margin:1.5rem;
+    padding:.5rem;
+    font-size: 2rem;
+   }
 }
