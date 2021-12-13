@@ -3,7 +3,6 @@
 :root{
     --main-color:#d3ad7f;
     --black:black;
-    ;
     --border:.1rem solid #d3ad7f;
 }
 
@@ -18,10 +17,10 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 65%;
     overflow-x: hidden;
-    scroll-padding-top: 9rem;
-    scroll-behavior: smooth;
+    
+    
 }
 
 
