@@ -28,9 +28,7 @@ html{
 body{
     background:var(--black);
 }
-.cart-body {
-    background-color: #d3ad7f;
-} 
+
 
 
 .btn{
@@ -74,22 +72,8 @@ body{
     top:0; left: 0; right: 0;
     z-index: 1000
 }
-.cart-header{
-    background: var(--black);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding:1.5rem 7%;
-    border-bottom: black;
-    position: relative;
-    top:0; left: 0; right: 0;
-    z-index: 1000
-}
-.cart-header .cart-navbar a{
-    margin:0 1rem;
-    font-size: 1.6rem;
-    color:#fff;
-}
+
+
 
 
 .header .navbar a{
@@ -103,11 +87,7 @@ body{
     border-bottom: .1rem solid var(--main-color);
     padding-bottom: .5rem;
 }
-.cart-header .cart-navbar a:hover{
-    color:var(--main-color);
-    border-bottom: .1rem solid var(--main-color);
-    padding-bottom: .5rem;
-}
+
 
 .header .icons div{
     color:#fff;
@@ -115,12 +95,7 @@ body{
     font-size: 2.5rem;
     margin-left: 2rem;
 }
-.cart-header .icons div{
-    color:#fff;
-    cursor: pointer;
-    font-size: 2.5rem;
-    margin-left: 2rem;
-}
+
 .header .icons .cart a {
     color:#fff;
     cursor: pointer;
@@ -129,25 +104,15 @@ body{
     padding: 2rem;
   
 }
-.cart-header .icons a{
-    color:#fff;
-    cursor: pointer;
-    font-size: 2.5rem;
-    margin-left: 2rem;
-    padding: 2rem;
-}
+
 .header .icons .cart a:hover{
     color: var(--main-color);
 }
-.cart-header .icons .cart a:hover{
-    color: var(--main-color);
-}
+
 .header .icons div:hover{
     color:var(--main-color);
 }
-.cart-header .icons div:hover{
-    color: var(--main-color);
-}
+
 
 
 .header .search-form{
@@ -161,24 +126,12 @@ body{
     transform: scaleY(0);
     transform-origin: top;
 }
-.cart-header .search-form{
-    position: absolute;
-    top:115%; right: 7%;
-    background: #fff;
-    width: 50rem;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    transform: scaleY(0);
-    transform-origin: top;
-}
+
 
 .header .search-form.active{
     transform: scaleY(1);
 }
-.cart-header .search-form.active{
-    transform: scaleY(1);
-}
+
 
 .header .search-form input{
     height: 100%;
@@ -188,14 +141,7 @@ body{
     padding:1rem;
     text-transform: none;
 }
-.cart-header .search-form input{
-    height: 100%;
-    width: 100%;
-    font-size: 1.6rem;
-    color:var(--black);
-    padding:1rem;
-    text-transform: none;
-}
+
 
 .header .search-form label{
     cursor: pointer;
@@ -203,21 +149,12 @@ body{
     margin-right: 1.5rem;
     color:var(--black);
 }
-.cart-header .search-form label{
-    cursor: pointer;
-    font-size: 2.2rem;
-    margin-right: 1.5rem;
-    color:var(--black);
-}
+
 
 
 .header .search-form label:hover{
     color:var(--main-color);
 }
-.cart-header .search-form label:hover{
-    color: var(--main-color);
-}
-
 
 
 
@@ -294,7 +231,7 @@ body{
   }
 
   .menu-section .box-contanier .box:hover h3{
-color:var(--black);
+    color:var(--black);
 }
 
 
@@ -304,68 +241,94 @@ color:var(--black);
 h5{
     color: #fff;
 }
-.products-container{
+.products-container {
     max-width: 650px;
     justify-content: space-around;
     margin: 0 auto;
     margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-bottom: 100px;
 }
-.products-container ion-icon{
+
+.products-container ion-icon {
     font-size: 25px;
-    color:#fff;
-    margin-left:  10px;;
+    color: white;
+    margin-left: 10px;
     margin-right: 10px;
     cursor: pointer;
 }
+
 .products-container ion-icon:hover{
-    color:var(--bg);
+    color: var(--main-color);
 }
 
- .product-header{
-     width: 100%;
-     max-width: 650px;
-     display: flex;
-     justify-content: flex-start;
-     border-bottom: 4px solid var(--black);
-     margin: 0 auto;
- }
- .title{
-     width: 45%;
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid var(--main-color);
+    margin: 0 auto;
     
- }
+}
 
- .price{
-     width: 15%;
-     
-     display: flex;
-     align-items: center;
-    
- }
- .quantity{
-     width: 30%;
-     border-bottom: 1px solid var(--black) ;
-     display: flex;
-     align-items: center;
- }
-.total{
-    width: 10%;
-    border-bottom: 1px solid var(--bg);
+.product-title {
+    width: 45%;
+    font-size: 15px;
+   
+}
+
+.price {
+    width: 15%;
+    border-bottom: 1px solid var(--main-color);
     display: flex;
     align-items: center;
-} 
+    font-size: 15px;
+    color: white;
+}
 
-.product{
+.quantity {
+    width: 30%;
+    border-bottom: 1px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: white;
+}
+
+.total {
+    width: 10%;
+    border-bottom: 1px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: white;
+}
+
+.product {
     width: 45%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid var(--bg);
- }
+    padding: 10px 9px;
+    border-bottom: 1px solid var(--main-color);
+    color: white;
+    font-size: 15px;
+}
+
+.product ion-icon {
+    cursor: pointer;
+    
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products img {
+    width: 75px;
+}
+
  
 .spancolor{
     color: #fff;
@@ -383,9 +346,7 @@ h5{
     .header{
         padding: 1.5rem 2rem;
     }
-    .cart-header{
-        padding: 1.5rem 2rem;
-    }
+    
     #menu-btn{
         display: inline-block;
     }
@@ -397,19 +358,11 @@ h5{
         width: 30rem;
         height: 775px;
     }
-.cart-header .cart-navbar{
-    position: absolute;
-        top:100%; right: -100%;
-        background: #fff;
-        width: 30rem;
-        height: 775px;
-}
+
     .header .navbar.active{
         right:0;
     }
-    .cart-header .cart-navbar.active{
-        right: 0;
-    }
+   
     .header .navbar a{
         color:var(--black);
         display: block;
@@ -417,11 +370,7 @@ h5{
         padding:.5rem;
         font-size: 2rem;
     }
-   .cart-header .cart-navbar{
-    color:var(--black);
-    display: block;
-    margin:1.5rem;
-    padding:.5rem;
-    font-size: 2rem;
-   }
+   
+          
+
 }

@@ -136,31 +136,29 @@ function displayCart(){
     let producContainer = document.querySelector(".products");
 
     console.log(cartItems)
-    if(cartItems && producContainer){
+    if(cartItems && producContainer) {
       producContainer.innerHTML = '';
         Object.values(cartItems).map(item => { 
             producContainer.innerHTML += `
-            <div class="prdoduct">
-               <ion-icon name="close-circle-outline"></ion-icon>
-               <img src="./images/${item.tag}.jpg" width = 100px; height="100px";>
-               <span>${item.name} </span>
-            </div>
-               <div class = "price"></div>
-                ${item.price}
-                
-                <div calss = "quantity">
-                    <ion-icon class = "decrease " 
-                    name="chevron-back-outline"></ion-icon>
-                    <span>${item.inCart}</span>
-                    <ion-icon class="increase" name="chevron-forward-outline"></ion-icon>
-                </div>
-               `
+            <div class="product" id= ><ion-icon name="close-circle"></ion-icon><img src="./images/${item.tag}.jpg" />
+            <span class="sm-hide">${item.name}</span>
+        </div>
+        <div class="price sm-hide">$${item.price}</div>
+        <div class="quantity">
+             <ion-icon class="decrease"  name="chevron-back-outline"></ion-icon>
+                <span>${item.inCart}</span>
+            <ion-icon class="increase" name="chevron-forward-outline"></ion-icon>  
+        </div>
+        <div class="total">$${item.inCart * item.price}</div>
+        </div>
+        `;
+               
         });
-
+       
 
     }
+    
 }
 
 onCartItems();
 displayCart();
-
