@@ -19,7 +19,7 @@ let carts = document.querySelectorAll('.add-btn');
 let menuItems = [
     {
         name: "AMERICAN COFFEE",
-        tag: "AMERICAN COFFEE",
+        tag: "AMERICAN-COFFEE",
         price: 2.10,
         inCart: 0 
     },
