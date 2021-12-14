@@ -134,6 +134,7 @@ function displayCart(){
     let cartItems = localStorage.getItem("menuItemsInCart");
     cartItems = JSON.parse(cartItems);
     let producContainer = document.querySelector(".products");
+    let cartCost = localStorage.getItem('totalCost');
 
     console.log(cartItems)
     if(cartItems && producContainer) {
@@ -155,6 +156,12 @@ function displayCart(){
                
         });
        
+        producContainer.innerHTML += ` 
+            <div class = " basketTotalContainer">
+            <h4 class = "basketTotalTitle">Basket Total</h4>
+            <h4 class="basketTotal">$${cartCost}</h4>
+        `;
+
 
     }
     

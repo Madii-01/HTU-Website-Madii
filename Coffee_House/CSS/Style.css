@@ -334,6 +334,24 @@ h5{
     color: #fff;
 }
 
+.basketTotalContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+    font-size: 20px;
+}
+
+.basketTotalTitle{
+    width: 30%;
+    color: white;
+}
+.basketTotal{
+    width: 10%;
+    color: white;
+}
+
 
 /*--------- cart web---------*/
 
