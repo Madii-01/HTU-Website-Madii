@@ -21,37 +21,37 @@ let menuItems = [
     {
         name: "AMERICAN COFFEE",
         tag: "AMERICAN-COFFEE",
-        price: 2.10,
+        price: 2,
         inCart: 0 
     },
     {
         name: "CARAMEL MACCHIATO",
         tag: "CARAMEL-MACCHIATO",
-        price: 3.99,
+        price: 3,
         inCart: 0 
     },
     {
         name: "ICED SPANISH LATTE",
         tag: "ICED-SPANISH-LATTE",
-        price: 3.99,
+        price: 3,
         inCart: 0 
     },
     {
         name: "SPANISH LATTE",
         tag: "SPANISH-LATTE",
-        price: 3.70,
+        price: 3,
         inCart: 0 
     },
     {
         name: "TURKISH COFFEE",
         tag: "TURKISH-COFFEE",
-        price: 3.89,
+        price: 3,
         inCart: 0 
     },
     {
         name: "WHITE MOCHA",
         tag: "WHITE-MOCHA-3",
-        price: 3.99,
+        price: 3,
         inCart: 0 
     }
 ];
@@ -158,13 +158,12 @@ function displayCart(){
        
         producContainer.innerHTML += ` 
             <div class = " basketTotalContainer">
-            <h4 class = "basketTotalTitle">Basket Total</h4>
-            <h4 class="basketTotal">$${cartCost}</h4>
-        `;
+                <h4 class = "basketTotalTitle">Basket Total</h4>
+                <h4 class="basketTotal">$${cartCost}</h4>
+            </div>`
 
 
     }
-    
 }
 
 onCartItems();
