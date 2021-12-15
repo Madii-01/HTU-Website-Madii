@@ -60,6 +60,9 @@ body{
     background: var(--main-color);
     cursor: pointer;
 }
+.check-out-btn:hover {
+    color: var(--black);
+}
 
 .header{
     background: var(--bg);

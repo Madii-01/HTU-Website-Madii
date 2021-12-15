@@ -158,8 +158,9 @@ function displayCart(){
        
         producContainer.innerHTML += ` 
             <div class = " basketTotalContainer">
-                <h4 class = "basketTotalTitle">Basket Total</h4>
+                <h4 class = "basketTotalTitle">Basket Total:</h4>
                 <h4 class="basketTotal">$${cartCost}</h4>
+                <a href="#" class="check-out-btn"> CHECK OUT</a>
             </div>`
 
 
