@@ -63,8 +63,8 @@
         <br><br>
         <div class="phone">
             phone number:<select name="countryCode" id="countryCode">
-                <option class="madii" data-countryCode="JO" value="962">Jordan (+962)</option> 
-                    <input class="madii" type="text">
+                <option data-countryCode="JO" value="962">Jordan (+962)</option> 
+                    <input type="text" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
                 </optgroup>
                 <br><br>
             </div>
@@ -73,6 +73,7 @@
                 </div>
             </select>
         </div>
+        <input class="check-out-btn" type="submit">
       </section>
 
 
