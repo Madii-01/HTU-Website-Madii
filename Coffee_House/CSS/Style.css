@@ -374,19 +374,22 @@ h5{
 /*--------- check-out web---------*/
 .check-out-body{
     min-height: 100vh;
+    display: flex;
     align-items: center;
     background: url(/Coffee_House/Images/background.jfif);
     background-size: cover;
     background-position: center;
+   
 }
 .CheckOut div{
     color: white;
     font-size: 30px;
-    
+    ;
 }
 
 .CheckOut .Fname input{ 
     margin-left: 10px; 
+    
 }
 .CheckOut .Lname  input{
     margin-left: 10px;
@@ -396,7 +399,7 @@ h5{
 }
 .CheckOut .Email input{
     margin-left: 40px;
-    width: 25%;
+    width: 60%;
 }
 
 /*--------- check-out web---------*/
