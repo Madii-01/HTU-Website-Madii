@@ -385,12 +385,11 @@ h5{
 .CheckOut div{
     color: white;
     font-size: 30px;
-    ;
 }
 
 .CheckOut .Fname input{ 
     margin-left: 10px; 
-    
+   
 }
 .CheckOut .Lname  input{
     margin-left: 10px;
