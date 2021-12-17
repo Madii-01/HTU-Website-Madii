@@ -48,30 +48,26 @@
       </header>
  <section class="check-out-body">
 
-    <form action="/action_page.php">
+    <form action="/Coffee_House/check-out.html">
       <section class="CheckOut"> 
         <div class="Fname">
-            First Name:<input  type="text" name = "First-Name">
-            
-        </div>
+            First Name:<input  type="text" name = "First-Name" required> </div>
         <br><br>
         <div class="Lname">
-            Last Name:<input  type="text " name = "Last-Name">
+            Last Name:<input  type="text " name = "Last-Name" required>
         </div>
         <br><br>
         <div class="Email">
-            E-mail:<input type="text"  name = "E-mail" >
+            E-mail:<input type="text"  name = "E-mail" required >
         </div>
         <br><br>
         <div class="phone">
-            phone number:<select name="countryCode" id="countryCode">
-                <option data-countryCode="JO" value="962">Jordan (+962)</option> 
-                    <input type="text" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
-                </optgroup>
+           Phone Number <input type="tel" name="phone"  value="+962   " placeholder="123-45-678" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required>
+                
                 <br><br>
             </div>
                 <div class="address">
-                    Address: <input type="text" " name="address">
+                    Address: <input type="text" name="address"  required>
                 </div>
             </select>
         </div>

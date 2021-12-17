@@ -49,19 +49,6 @@ body{
     background: var(--main-color);
     cursor: pointer;
 }
-.check-out-btn-1{
-    margin-top: 1rem;
-    display: inline-block;
-    padding:.9rem 3rem;
-    font-size: 1.7rem;
-    color:#fff;
-    background: var(--main-color);
-    cursor: pointer; 
-    border-radius: 10px; 
-}
-.check-out-btn-1:hover {
-    color: var(--black);
-}
 
 .check-out-btn{
     margin-top: 1rem;
@@ -375,21 +362,21 @@ h5{
 /*--------- check-out web---------*/
 .check-out-body{
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: url(/Coffee_House/Images/background.jfif);
+    display:flex;
+    background: url(/Coffee_House/Images/photo-1572976993240-ee51181680be.jfif);
     background-size: cover;
     background-position: center;
-   
 }
 .CheckOut div{
     color: white;
     font-size: 30px;
+
 }
 
 .CheckOut .Fname input{ 
     margin-left: 10px; 
-   
+    margin-top: 100px;
+    
 }
 .CheckOut .Lname  input{
     margin-left: 10px;
@@ -401,6 +388,38 @@ h5{
     margin-left: 40px;
     width: 60%;
 }
+
+.CheckOut .phone #countryCode{
+    margin-left: 10px;
+    background-color: black;
+    color: #fff;
+}
+.CheckOut .phone input{
+    margin-left: 10px;
+   
+}
+
+.CheckOut .address input{
+   
+    height: 90px;
+    width: 80%;
+}
+
+.check-out-btn-1{
+    margin-top: 30px;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer; 
+    border-radius: 10px; 
+    
+}
+.check-out-btn-1:hover {
+    color: var(--black);
+}
+
 
 /*--------- check-out web---------*/
 
