@@ -235,8 +235,37 @@ body{
   .menu-section .box-contanier .box:hover h3{
     color:var(--black);
 }
+.footer{
+    background: black;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+.footer .cont{
+    padding: 1rem 0;
+}
+.footer .cont a{
+margin: 2rem;
+height: 5rem;
+width: 5rem;
+line-height: 5rem;
+color: white;
 
-
+font-size: 4rem;
+border-radius: 50%;
+}
+.footer .cont a:hover{
+    color: var(--main-color);
+}
+.footer .credit{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+.footer .credit span{
+    color: #d3ad7f;
+}
 
 /*--------- cart web---------*/
 

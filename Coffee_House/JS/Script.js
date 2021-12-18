@@ -160,7 +160,7 @@ function displayCart(){
             <div class = " basketTotalContainer">
                 <h4 class = "basketTotalTitle">Basket Total:</h4>
                 <h4 class="basketTotal">$${cartCost}</h4>
-                <a href="/Coffee_House/check-out.html" class="check-out-btn"> CHECK OUT</a>
+                <a href="/Coffee_House/check-out.html" target="blank" class="check-out-btn" > CHECK OUT</a>
             </div>`
 
 
