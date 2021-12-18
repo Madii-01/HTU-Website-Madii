@@ -49,6 +49,9 @@ body{
     background: var(--main-color);
     cursor: pointer;
 }
+.add-btn:hover{
+    color: black ;
+}
 
 .check-out-btn{
     margin-top: 1rem;
