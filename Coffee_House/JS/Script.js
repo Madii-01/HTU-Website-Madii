@@ -269,5 +269,5 @@ onCartItems();
 displayCart();
 
 function ThankYou(){
-    alert("Thank you for your purchase. Cash on deilvery :) ")
+    alert("Thank you for your purchase. Cash on deilvery :) ");
 }
