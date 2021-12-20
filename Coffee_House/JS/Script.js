@@ -20,37 +20,37 @@ let carts = document.querySelectorAll('.add-btn');
 let menuItems = [
     {
         name: "AMERICAN COFFEE",
-        tag: "AMERICAN-COFFEE",
+        tag: "americancoffee",
         price: 2,
         inCart: 0 
     },
     {
         name: "CARAMEL MACCHIATO",
-        tag: "CARAMEL-MACCHIATO",
+        tag: "caramelmacchiato",
         price: 3,
         inCart: 0 
     },
     {
         name: "ICED SPANISH LATTE",
-        tag: "ICED-SPANISH-LATTE",
+        tag: "icedspanishlatte",
         price: 3,
         inCart: 0 
     },
     {
         name: "SPANISH LATTE",
-        tag: "SPANISH-LATTE",
+        tag: "spanishlatte",
         price: 3,
         inCart: 0 
     },
     {
         name: "TURKISH COFFEE",
-        tag: "TURKISH-COFFEE",
+        tag: "turkishcoffee",
         price: 3,
         inCart: 0 
     },
     {
         name: "WHITE MOCHA",
-        tag: "WHITE-MOCHA-3",
+        tag: "whitemocha",
         price: 3,
         inCart: 0 
     }
@@ -141,8 +141,8 @@ function displayCart(){
       producContainer.innerHTML = '';
         Object.values(cartItems).map(item => { 
             producContainer.innerHTML += `
-            <div class="product" id= ><ion-icon name="close-circle-outline"></ion-icon><img src="./images/${item.tag}.jpg" />
-            <span class="sm-hide">${item.name}</span>
+            <div class="product" id= ><ion-icon name="close-circle-outline"></ion-icon><img src="./images/${item.tag}.jpg"  />
+            <span>${item.name}</span>
         </div>
         <div class="price sm-hide">$${item.price}</div>
         <div class="quantity">
@@ -163,7 +163,34 @@ function displayCart(){
                 <a href="/Coffee_House/check-out.html" target="blank" class="check-out-btn" > CHECK OUT</a>
             </div>`
 
+           
+    }
+    deleteButtons();
+}
+function deleteButtons() {
+    let deleteButtons = document.querySelectorAll('.product ion-icon');
+    let productName;
+    let productNumbers = localStorage.getItem('cartNumbers');
+    let cartItems = localStorage.getItem('menuItemsInCart')
+    cartItems = JSON.parse(cartItems);
+    let cartCost = localStorage.getItem('totalCost');
 
+    for(let i=0; i < deleteButtons.length; i++) {
+        deleteButtons[i].addEventListener('click', () => {
+            productName = deleteButtons[i].parentElement.textContent.trim().toLowerCase().replace(/ /g, '');
+            //console.log(productName);
+            //console.log(cartItems[productName].name+" "+cartItems[productName].inCart)
+            localStorage.setItem('cartNumbers' , productNumbers  - cartItems[productName].inCart );
+
+            localStorage.setItem('totalCost' ,cartCost - (cartItems[productName].price * cartItems[productName].inCart ));
+
+            delete cartItems[productName];
+            localStorage.setItem('menuItemsInCart' , JSON.stringify(cartItems));
+
+            
+            displayCart();
+            onCartItems();
+        });
     }
 }
 
