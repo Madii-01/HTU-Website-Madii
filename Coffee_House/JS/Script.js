@@ -252,14 +252,6 @@ function manageQuantity(){
                 localStorage.setItem('menuItemsInCart', JSON.stringify(cartItems));
                 displayCart();
 
-
-
-
-
-
-
-
-
         });
 
 
