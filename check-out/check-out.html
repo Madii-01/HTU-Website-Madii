@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/check-out/style.css">
+</head>
+<body>
+    <div class = "wrapper">
+        <h2>Payment Form</h2>
+        <form method="POST">
+            <h4>Account</h4>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="First Name" required class="name">
+                    <i><ion-icon name="person-circle-outline"></ion-icon></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Last Name" required class="name">
+                    <i><ion-icon name="person-circle-outline"></ion-icon></i>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="email" placeholder="Your E-mail address" required class="name">
+                    <i><ion-icon name="mail-sharp"></ion-icon></i>
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+                <div class="input-box">
+                   <h4>Date Of Birth</h4>
+                   <input type="text" placeholder="DD" class="DOB">
+                   <input type="text" placeholder="MM" class="DOB">
+                   <input type="text" placeholder="YYYY" class="DOB">
+                </div>
+                <div class="input-box">
+                    <h4>Gender</h4>
+                    <input type="radio" id="G1" name="gender" checked class="radio">
+                    <label for="G1"> Male</label>
+                    <input type="radio" id="G2" name="gender" checked class="radio">
+                    <label for="G1"> Female</label>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <div class="input-box">
+                 <h4>Payment Details</h4>
+                 <input type="radio" name="pay" id="p1" checked class="radio"> 
+                 <label for="p1">Cash On Delivery <i></i></label>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
