@@ -1,10 +1,26 @@
 
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
+          .tele{
+              border-left: none;
+             
+          }
+        </style>
+    </head>
 <body>
 
 <h1>Display a Telephone Input Field</h1>
 
+
+Phone Number:  <select name="countryCode" id="countryCode">
+	
+    <option data-countryCode="JO" value="962">Jordan (+962)</option>)</option>
+	
+    <input class="tele" type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+</optgroup>
+</select>
 
 </body>
 </html>
