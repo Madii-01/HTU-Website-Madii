@@ -1,0 +1,36 @@
+:root{
+    --main-color:#d3ad7f;
+    --black:black;
+    --border:.1rem solid #d3ad7f;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+  background-color: black;  
+}
+
+.wrapper{
+    background-color: white;
+    width: 75%; 
+    height: 75%;
+    padding: 25px;
+    margin: 25px auto 0;
+    
+   
+}
+.wrapper h2{
+    background-color: white;
+    color: #d3ad7f;
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}

@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/check-out/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body>
+<body class="body">
     <div class = "wrapper">
         <h2>Payment Form</h2>
         <form method="POST">
@@ -34,6 +35,20 @@
 
             <div class="input-group">
                 <div class="input-box">
+                    <select name="countryCode" id="countryCode">
+	
+                        <option data-countryCode="JO" value="962">Jordan (+962)</option>)</option>
+                        
+                        <input class="tele" type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> <i><ion-icon name="call"></ion-icon></i>
+                    </optgroup>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+                <div class="input-box">
                    <h4>Date Of Birth</h4>
                    <input type="text" placeholder="DD" class="DOB">
                    <input type="text" placeholder="MM" class="DOB">
@@ -52,16 +67,30 @@
                 <div class="input-box">
                  <h4>Payment Details</h4>
                  <input type="radio" name="pay" id="p1" checked class="radio"> 
-                 <label for="p1">Cash On Delivery <i></i></label>
+                 <label for="p1">Cash On Delivery <i class="fas fa-money-bill"></i></label>
                 </div>
             </div>
 
+            <div class="input-group">
+                <div class="input-box">
+                 <h4>Address Details</h4>
+                 <input type="text" placeholder="City Name" required>
+                 <input type="text" placeholder="Street Name" required>
+                 <input type="text" placeholder="Building Number" required>
+                </div>
+            </div>
+<br><br>
+            <button class="check-out-btn-1" type="submit" onclick="ThankYou()"> Submit & chechk out</button> 
         </form>
     </div>
 
 
 
-
+<script>
+    function ThankYou(){
+    alert("Thank you for your purchase. Cash on deilvery :) ");
+}
+</script>
 
 
 
