@@ -193,7 +193,7 @@ body{
 .menu-section .box-contanier{
     display: grid; 
   grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
   gap: auto auto ; 
   grid-template-areas: 
     "div1 div2 div3"
@@ -215,23 +215,7 @@ body{
     font-size: 2rem;
     padding: 1rem 0;
 }
-.div1 {
-    display: grid flex; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      ". . ."
-      ". . ."
-      ". . ."; 
-    grid-area: div1; 
-  }
-  .div2 { grid-area: div2; }
-  .div3 { grid-area: div3; }
-  .div4 { grid-area: div4; }
-  .div5 { grid-area: div5; }
-  .div6 { grid-area: div6; 
-  }
+
   .menu-section .box-contanier .box:hover{
       background: white;
   }
@@ -269,6 +253,8 @@ font-size: 4rem;
     color: #d3ad7f;
 }
 
+
+
 /*--------- cart web---------*/
 
 h5{
@@ -284,8 +270,7 @@ h5{
 .products-container ion-icon {
     font-size: 25px;
     color: white;
-    margin-left: 10px;
-    margin-right: 10px;
+    
     cursor: pointer;
 }
 
@@ -349,7 +334,8 @@ h5{
 
 .product ion-icon {
     cursor: pointer;
-    font-size: 4rem;
+    font-size: 25px;
+  
 }
 
 .products {
@@ -360,8 +346,8 @@ h5{
 
 .products img {
     width: 100px;
-margin-right: 20px;
-margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
  
@@ -469,7 +455,18 @@ margin-left: 20px;
     
     #menu-btn{
         display: inline-block;
+        padding-left: 36px;
+        margin-top: 10px;
     }
+
+    #search-btn{
+        margin-bottom: 10px;
+        padding-left: 36px;
+    }
+
+
+
+    
 
     .header .navbar{
         position: absolute;
@@ -490,7 +487,36 @@ margin-left: 20px;
         padding:.5rem;
         font-size: 2rem;
     }
-   
-          
+    .menu-section .box-contanier{
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "div1"
+      "div2"
+      "div3"
+      "div4"
+      "div5"
+      "div6"; 
+  }
+  .div1 { grid-area: div1; }
+  .div2 { grid-area: div2; }
+  .div3 { grid-area: div3; }
+  .div4 { grid-area: div4; }
+  .div5 { grid-area: div5; }
+  .div6 { grid-area: div6; }
+
+}
+.check-out-btn{
+    margin-right:20px; ;
+}
+
+
+@media (max-width:480px){
+
+.product ion-icon {
+    font-size: 40px;
+    }   
 
 }

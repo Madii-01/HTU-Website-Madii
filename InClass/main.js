@@ -1,13 +1,8 @@
+const buy = document.querySelectorAll(".btn")[0];
+const biggerContainer = document.querySelector(".bigger-contaier")
+buy.addEventListener("click" , (eo) => {
 
-document.addEventListener('DOMContentLoaded', function(){
-   document.querySelector('.Hide').addEventListener('click',function(){
-       document.querySelector('h1').style.display = " none";
-   });
-    document.querySelector('.show').addEventListener('click',function(){
-        document.querySelector('h1').style.display = " block";
-   });
+biggerContainer.classList.add("active")
 
 
-
-
-});
+})
