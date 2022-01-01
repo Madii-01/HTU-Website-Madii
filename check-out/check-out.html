@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="/check-out/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body class="body">
+<body>
+
+<div class="home">
     <div class = "wrapper">
         <h2>Payment Form</h2>
         <form method="POST">
@@ -54,7 +56,7 @@
                    <input type="text" placeholder="MM" class="DOB">
                    <input type="text" placeholder="YYYY" class="DOB">
                 </div>
-                <div class="input-box">
+                <div class="input-Gbox">
                     <h4>Gender</h4>
                     <input type="radio" id="G1" name="gender" checked class="radio">
                     <label for="G1"> Male</label>
@@ -63,11 +65,11 @@
                 </div>
             </div>
             
-            <div class="input-group">
+            <div class="input-Pgroup">
                 <div class="input-box">
                  <h4>Payment Details</h4>
                  <input type="radio" name="pay" id="p1" checked class="radio"> 
-                 <label for="p1">Cash On Delivery <i class="fas fa-money-bill"></i></label>
+                 <label for="p1">Cash On Delivery </label> <i class="fas fa-money-bill"></i>
                 </div>
             </div>
 
@@ -79,12 +81,12 @@
                  <input type="text" placeholder="Building Number" required>
                 </div>
             </div>
-<br><br>
+    <br><br>
             <button class="check-out-btn-1" type="submit" onclick="ThankYou()"> Submit & chechk out</button> 
         </form>
     </div>
 
-
+</div>
 
 <script>
     function ThankYou(){

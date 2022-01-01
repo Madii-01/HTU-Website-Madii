@@ -12,21 +12,22 @@
     
 }
 
-body{
-  background-color: black;  
+.home{
+    min-height: 100vh;
+    display: flex;
+    background: url(/Coffee_House/Images/home\ page.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .wrapper{
-    background-color: white;
     width: 75%; 
     height: 75%;
     padding: 25px;
-    margin: 25px auto 0;
     
-   
 }
 .wrapper h2{
-    background-color: white;
+    
     color: #d3ad7f;
     font-size: 25px;
     padding: 10px;
@@ -34,3 +35,43 @@ body{
     text-align: center;
 
 }
+
+.wrapper h4{
+    color: #d3ad7f;
+    font-size: 20px;
+}
+
+.wrapper .input-Gbox label {
+  color: #fff;
+}
+
+
+.wrapper .input-Pgroup label{
+    color: #fff;
+}
+
+.wrapper .input-Pgroup i {
+    color: black ;
+    font-size: 25px;
+}
+
+
+.wrapper ion-icon{
+font-size: 25px;
+}
+
+.check-out-btn-1{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 25px;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.check-out-btn-1:hover {
+    color: var(--black);
+}
+
+
