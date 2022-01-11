@@ -65,7 +65,7 @@ body{
 }
 
 .header{
-    background: var(--bg);
+    background-color:black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,6 +76,9 @@ body{
     z-index: 1000
 }
 
+.header .logo img{
+    font-size: 500px 
+}
 
 
 
