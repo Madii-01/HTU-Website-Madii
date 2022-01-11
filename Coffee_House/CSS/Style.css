@@ -65,7 +65,7 @@ body{
 }
 
 .header{
-    background-color:black;
+    background-color:#2B2B2B;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -73,12 +73,8 @@ body{
     border-bottom: var(--border);
     position: relative;
     top:0; left: 0; right: 0;
-    z-index: 1000
 }
 
-.header .logo img{
-    font-size: 500px 
-}
 
 
 
