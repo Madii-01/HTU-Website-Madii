@@ -68,7 +68,7 @@ function onCartItems(){
     let productNumbers = localStorage.getItem('cartNumbers');
 
     if(productNumbers) {
-        document.querySelector('.cart span').textContent = productNumbers;
+        document.querySelector('#cart span').textContent = productNumbers;
     }
 }
 
@@ -83,15 +83,15 @@ function cartNumbers(menuItems, action) {
 
     if( action == "decrease") {
         localStorage.setItem('cartNumbers', productNumbers - 1);
-        document.querySelector('.cart span').textContent = productNumbers - 1;
+        document.querySelector('#cart span').textContent = productNumbers - 1;
     }
     else if( productNumbers ){
         localStorage.setItem('cartNumbers' , productNumbers + 1);
-        document.querySelector('.cart span').textContent = productNumbers + 1;
+        document.querySelector('#cart span').textContent = productNumbers + 1;
     }
     else{
         localStorage.setItem('cartNumbers' , 1); 
-        document.querySelector('.cart span').textContent = 1;
+        document.querySelector('#cart span').textContent = 1;
     }   
     setItems(menuItems);
 }
