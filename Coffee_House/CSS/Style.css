@@ -103,7 +103,7 @@ body{
     color:#fff;
     cursor: pointer;
     font-size: 2.5rem;
-    margin-left: 2rem;
+   
     
 }
 
@@ -389,15 +389,20 @@ h5{
 .home{
     min-height: 100vh;
     display: flex;
-    background: url(/Coffee_House/Images/home\ page.jpg);
+    background-image: url(/Images/home\ page.jpg);
     background-size: cover;
     background-position: center;
+ 
 }
+
+
 
 .wrapper{
     width: 75%; 
     height: 75%;
     padding: 25px;
+   
+  
     
 }
 .wrapper h2{
@@ -411,7 +416,7 @@ h5{
 }
 
 .wrapper h4{
-    color: #d3ad7f;
+    color: #2B2B2B;
     font-size: 20px;
 }
 
