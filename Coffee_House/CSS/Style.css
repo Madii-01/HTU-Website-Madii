@@ -389,10 +389,9 @@ h5{
 .home{
     min-height: 100vh;
     display: flex;
-    background-image: url(/Images/home\ page.jpg);
+    background-image: url(/Images/);
     background-size: cover;
     background-position: center;
- 
 }
 
 
@@ -416,7 +415,7 @@ h5{
 }
 
 .wrapper h4{
-    color: #2B2B2B;
+    color: #8B4513;
     font-size: 20px;
 }
 
