@@ -175,7 +175,7 @@ function displayCart(){
             <div class = " basketTotalContainer">
                 <h4 class = "basketTotalTitle">Basket Total:</h4>
                 <h4 class="basketTotal">$${cartCost}</h4>
-                <a href="check-out.html" target="blank"  class="check-out-btn" > CHECK OUT</a>
+                <a href="check-out.php" target="blank"  class="check-out-btn" > CHECK OUT</a>
             </div>`
 
             
