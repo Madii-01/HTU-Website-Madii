@@ -80,7 +80,7 @@ body{
 
 .header .navbar a{
     margin:0 1rem;
-    font-size: 30px;
+    font-size: 15px;
     color:#fff;
 }
 
@@ -501,7 +501,7 @@ font-size: 25px;
 /*--------- employee web---------*/
 
 
-@media only screen and (max-width:768px){
+@media (max-width:790px){
     html{
         font-size: 50%;
     }
@@ -522,8 +522,8 @@ font-size: 25px;
         position: absolute;
         top:100%; right: -100%;
         background: #fff;
-        width: 30rem;
-        height: 775px;
+        width: 20rem;
+        height: 757px;
         
     }
 
@@ -563,11 +563,6 @@ font-size: 25px;
 }
 
 }
-
-
-
-@media screen and (min-width:280px){
-
 .product ion-icon {
     font-size: 30px;
     }   
@@ -579,4 +574,8 @@ font-size: 25px;
         
     }
 
-}
+
+
+
+
+
